@@ -62,6 +62,25 @@ This project documents the setup of a Windows Server 2022 virtual machine on Mic
 
 ---
 
+### 🧪 Sample Organizational Units and Users
+![Active Directory Users and Computers](images/ad_users_and_computer.png)
+After verifying the domain setup, the following Organizational Units (OUs) and sample users were created for demonstration purposes:
+
+**Organizational Units (OUs):**
+- IT
+- HR
+- Finance
+- TestLab
+
+**Sample Users:**
+- `Alice Nguyen` in OU: IT
+- `Bob Tran` in OU: HR
+- `Charlie Le` in OU: Finance
+- `Test User` in OU: TestLab
+
+These users were created using the 'Active Directory Users and Computers' tool by right-clicking the respective OU and selecting **New > User**.
+
+---
 ## 📁 GitHub Documentation
 
 This repository includes:
