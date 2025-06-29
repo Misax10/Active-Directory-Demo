@@ -116,6 +116,39 @@ After creating a new user in Active Directory:
 
 ---
 
+## 🖥️ Adding a Windows 11 Client VM for Domain Login Testing
+
+To simulate a domain-joined client environment, a second virtual machine was created using **Windows 11 Pro**.
+
+### ✅ VM Configuration
+
+| Setting | Value |
+|--------|-------|
+| **VM Name** | AD-Client-VM |
+| **Region** | West US 2 |
+| **Availability Zone** | Zone 2 |
+| **Image** | Windows 11 Pro, version 23H2 - x64 Gen2 |
+| **VM Size** | Standard D2s v3 |
+| **Resource Group** | AD-Lab-RG |
+| **Virtual Network** | AD-DC-VM-vnet |
+| **Subnet** | default (10.0.0.0/24) |
+| **Public IP** | Enabled (for RDP access) |
+| **NSG** | RDP (3389) open for testing |
+| **Security Type** | Trusted Launch |
+
+### 🪟 Initial Setup Screenshot
+
+![Windows 11 Privacy Settings](images/windows11_privacy_setup.png)
+
+> *Screenshot: Windows 11 privacy settings screen during initial setup.*
+
+### 🔐 RDP Access from macOS
+
+- **Tool Used**: Microsoft Remote Desktop (from Mac App Store)
+- **Connection**: Public IP of the VM with local admin credentials
+- **Status**: Successfully connected and ready for domain join
+
+
 ## 📚 What to Explore Next in Active Directory
 
 Here are some basic tasks to continue learning:
