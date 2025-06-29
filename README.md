@@ -2,6 +2,17 @@
 
 This project documents the setup of a Windows Server 2022 virtual machine on Microsoft Azure for practicing Active Directory (AD) configuration. It is intended as a portfolio project to demonstrate cloud infrastructure and identity management skills.
 
+----
+
+
+## 📁 GitHub Documentation
+
+This repository includes:
+- Step-by-step setup instructions
+- Screenshots of the Azure portal and AD configuration
+- Notes on security, troubleshooting, and lessons learned
+
+---
 ## 🚀 Project Purpose
 
 - Learn how to deploy and configure a Windows Server VM on Azure
@@ -81,12 +92,41 @@ After verifying the domain setup, the following Organizational Units (OUs) and s
 These users were created using the 'Active Directory Users and Computers' tool by right-clicking the respective OU and selecting **New > User**.
 
 ---
-## 📁 GitHub Documentation
 
-This repository includes:
-- Step-by-step setup instructions
-- Screenshots of the Azure portal and AD configuration
-- Notes on security, troubleshooting, and lessons learned
+
+## 👥 Managing Users and Organizational Units
+
+After creating a new user in Active Directory:
+
+1. **Move User to an Organizational Unit (OU)**
+   - If the user is in the default "Users" container:
+     - Right-click the user > **Move**
+     - Select the appropriate OU (e.g., `IT`, `HR`, `Finance`, `TestLab`)
+
+2. **Assign Group Memberships**
+   - Right-click the user > **Properties**
+   - Go to the **Member Of** tab
+   - Click **Add** to assign the user to groups like:
+     - `Domain Users` (default)
+     - Custom groups (e.g., `IT Admins`, `HR Staff`)
+
+3. **Test Login (Optional)**
+   - Join another VM to the domain
+   - Log in using the new user's credentials to verify access
+
+---
+
+## 📚 What to Explore Next in Active Directory
+
+Here are some basic tasks to continue learning:
+
+- ✅ Create and manage **Security Groups** and **Distribution Groups**
+- ✅ Apply **Group Policy Objects (GPOs)** to OUs
+- ✅ Join a **client machine** to the domain
+- ✅ Set up **Group Policy for password policies or desktop settings**
+- ✅ Enable **auditing** for user logins and changes
+- ✅ Delegate administrative control over specific OUs
+- ✅ Explore **Active Directory Sites and Services** for replication
 
 ---
 
