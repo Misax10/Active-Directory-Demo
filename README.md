@@ -47,6 +47,10 @@ This project documents the setup of a Windows Server 2022 virtual machine on Mic
 
 ## 🧩 Active Directory Setup (Post-Deployment)
 
+### 📸 Screenshots
+![Deployment Success](images/deployment_success.png)
+![Server Manager with AD DS and DNS](images/server_manager_ad_ds_dns.png)
+
 1. **Connect via RDP** to the VM.
 2. Open **Server Manager** > Add Roles and Features.
 3. Install **Active Directory Domain Services (AD DS)**.
@@ -62,18 +66,17 @@ This project documents the setup of a Windows Server 2022 virtual machine on Mic
 
 This repository includes:
 - Step-by-step setup instructions
-- Screenshots of Azure portal and AD configuration
+- Screenshots of the Azure portal and AD configuration
 - Notes on security, troubleshooting, and lessons learned
 
 ---
 
-## ✅ Status
-
-✅ VM successfully deployed and validated  
-✅ Active Directory installed and configured  
-✅ RDP access secured post-deployment  
-✅ Project documented on GitHub
-
+## ✅ Status:
+- ✅ VM successfully deployed and validated
+- ✅ Active Directory installed and domain controller promotion complete
+- ✅ Logged into the domain and verified AD DS and DNS roles
+- ✅ RDP access secured post-deployment
+- ✅ Project documented on GitHub
 ---
 
 ## 👤 Author
