@@ -266,13 +266,16 @@ This adds `kevin.diep` to the **Remote Desktop Users** group.
 6. Click **Check Names**, then **OK**
 7. Click **Apply** and **OK** to save.
 ![Add Domain](images/windows11_add_domain_user_to_groups.png)
----
 
-### 🔁 Try Logging In Again
+
+###  Step 3 🔁 Try Logging In Again Using RDP
 
 Use:
 - **Username**: `adlab\kevin.diep`
 - **Password**: *(your set password)*
+
+---
+
 ## 📚 What to Explore Next in Active Directory
 
 Here are some basic tasks to continue learning:
