@@ -148,7 +148,10 @@ To simulate a domain-joined client environment, a second virtual machine was cre
 - **Connection**: Public IP of the VM with local admin credentials
 - **Status**: Successfully connected and ready for domain join
 
-
+### 🔗 How to know the Domain name
+1. Open **Server Manager** → **Local Server**
+2. View the Domain name
+![Domain Name](images/windows_server_domain_name.png)
 
 ## 🌐 Configure DNS and Join Domain
 
