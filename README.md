@@ -232,7 +232,7 @@ If you're using **Microsoft Remote Desktop on macOS**:
    - Click **Check Names**, then **OK**
 
 This adds `kevin.diep` to the **Remote Desktop Users** group.
-![Grant RDP Access](windows_server_grant_rdp_access.png)
+![Grant RDP Access](images/windows_server_grant_rdp_access.png)
 ---
 
 ###  Step 2🧰 Add Domain User to Remote Desktop Users Group
