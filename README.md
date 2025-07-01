@@ -149,6 +149,59 @@ To simulate a domain-joined client environment, a second virtual machine was cre
 - **Status**: Successfully connected and ready for domain join
 
 
+
+## 🌐 Configure DNS and Join Domain
+
+To enable domain discovery and authentication, the Windows 11 client must use the domain controller as its DNS server.
+
+### 🛠️ Change DNS Settings
+
+1. Open **Settings** → **Network & Internet** → **Ethernet**.
+2. Click **Edit** next to **DNS server assignment**.
+3. Set the following:
+   - **Preferred DNS**: `10.0.0.4` (private IP of AD-DC-VM)
+   - **Alternate DNS**: *(optional)*
+
+![DNS Settings](images/windows11_dns_settings.png)  
+> *Screenshot: Configuring DNS to point to the domain controller.*
+
+### 🔗 Join the Domain
+
+1. Press `Windows + R`, type `sysdm.cpl`, and press Enter.
+2. In the **Computer Name** tab, click **Change…**
+3. Select **Domain**, and enter: `adlab.local`
+4. When prompted, enter domain credentials:
+   - **Username**: `adlab\Administrator`
+   - **Password**: *your domain admin password*
+
+![Join Domain](images/windows11_join_domain.png)  
+> *Screenshot: Entering domain name to join.*
+
+![Domain Credentials](images/windows11_domain_credentials.png)  
+> *Screenshot: Providing domain admin credentials.*
+
+5. You should see a welcome message confirming domain join.
+
+![Domain Welcome](images/windows11_domain_welcome.png)  
+> *Screenshot: Successfully joined the domain.*
+
+6. Restart the VM when prompted.
+
+### 🔐 Log in with Domain Account
+
+At the login screen:
+- Click **Other user**
+- Enter:
+  - **Username**: `adlab\Administrator`
+  - **Password**: *your domain password*
+
+![Domain Login](images/windows11_domain_login.png)  
+> *Screenshot: Logging in with domain credentials.*
+- **Tool Used**: Microsoft Remote Desktop (from Mac App Store)
+- **Connection**: Public IP of the VM with local admin credentials
+- **Status**: Successfully connected and ready for domain join
+
+---
 ## 📚 What to Explore Next in Active Directory
 
 Here are some basic tasks to continue learning:
