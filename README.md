@@ -205,6 +205,56 @@ At the login screen:
 - **Status**: Successfully connected and ready for domain join
 
 ---
+## If You Get This Error
+![Login Error](images/windows11_login_error.png)
+
+### ✅ Before Trying Again
+
+Use these credentials:
+- **Username**: `adlab\kevin.diep`
+- **Password**: *(new password you just set)*
+
+If you're using **Microsoft Remote Desktop on macOS**:
+1. Edit the saved connection.
+2. Add a new user account with the domain credentials.
+
+---
+
+### 🔐 Grant RDP Access to the Domain User
+
+1. **Log into the AD-DC-VM** (or use the Windows 11 client as `khoaadmin`).
+2. Open **System Properties**:
+   - Press `Windows + R`, type `sysdm.cpl`, and press Enter.
+3. Go to the **Remote** tab.
+4. Under **Remote Desktop**, click **Select Users…**
+5. Click **Add**, then:
+   - Type: `adlab\kevin.diep`
+   - Click **Check Names**, then **OK**
+
+This adds `kevin.diep` to the **Remote Desktop Users** group.
+
+---
+
+### 🧰 Add Domain User to Remote Desktop Users Group (Alternative Method)
+
+1. On the **Windows 11 client VM**, open **Computer Management**:
+   - Press `Windows + R`, type `compmgmt.msc`, and press Enter.
+2. Navigate to:
+   - `System Tools > Local Users and Groups > Groups`
+3. Double-click **Remote Desktop Users**
+4. Click **Add…**
+5. In the object name field, type:
+   - `adlab\kevin.diep`
+6. Click **Check Names**, then **OK**
+7. Click **Apply** and **OK** to save.
+
+---
+
+### 🔁 Try Logging In Again
+
+Use:
+- **Username**: `adlab\kevin.diep`
+- **Password**: *(your set password)*
 ## 📚 What to Explore Next in Active Directory
 
 Here are some basic tasks to continue learning:
@@ -231,4 +281,10 @@ Here are some basic tasks to continue learning:
 
 **Khoa Diep**  
 Azure Enthusiast | Windows Server | Active Directory | Cloud Projects
+
+
+## 🛠️ Troubleshooting RDP Login with Domain Accounts
+
+If you're having trouble logging into a domain account via RDP, follow these steps:
+
 
