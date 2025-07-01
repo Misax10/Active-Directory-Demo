@@ -219,6 +219,9 @@ If you're using **Microsoft Remote Desktop on macOS**:
 2. Add a new user account with the domain credentials.
 
 ---
+## 🛠️ Troubleshooting RDP Login with Domain Accounts
+
+If you're having trouble logging into a domain account via RDP, follow these steps:
 
 ###  Step1: 🔐 Grant RDP Access to the Domain User
 
@@ -247,7 +250,7 @@ This adds `kevin.diep` to the **Remote Desktop Users** group.
    - `adlab\kevin.diep`
 6. Click **Check Names**, then **OK**
 7. Click **Apply** and **OK** to save.
-
+![Add Domain](images/windows11_add_domain_user_to_groups.png)
 ---
 
 ### 🔁 Try Logging In Again
@@ -282,9 +285,5 @@ Here are some basic tasks to continue learning:
 **Khoa Diep**  
 Azure Enthusiast | Windows Server | Active Directory | Cloud Projects
 
-
-## 🛠️ Troubleshooting RDP Login with Domain Accounts
-
-If you're having trouble logging into a domain account via RDP, follow these steps:
 
 
