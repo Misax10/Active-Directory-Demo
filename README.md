@@ -1,4 +1,4 @@
-# Azure Active Directory Lab on Windows Server 2022
+  # Azure Active Directory Lab on Windows Server 2022
 
 This project documents the setup of a Windows Server 2022 virtual machine on Microsoft Azure for practicing Active Directory (AD) configuration. It is intended as a portfolio project to demonstrate cloud infrastructure and identity management skills.
 
@@ -220,7 +220,7 @@ If you're using **Microsoft Remote Desktop on macOS**:
 
 ---
 
-### 🔐 Grant RDP Access to the Domain User
+###  Step1: 🔐 Grant RDP Access to the Domain User
 
 1. **Log into the AD-DC-VM** (or use the Windows 11 client as `khoaadmin`).
 2. Open **System Properties**:
@@ -232,12 +232,12 @@ If you're using **Microsoft Remote Desktop on macOS**:
    - Click **Check Names**, then **OK**
 
 This adds `kevin.diep` to the **Remote Desktop Users** group.
-
+![Grant RDP Access](windows_server_grant_rdp_access.png)
 ---
 
-### 🧰 Add Domain User to Remote Desktop Users Group (Alternative Method)
+###  Step 2🧰 Add Domain User to Remote Desktop Users Group
 
-1. On the **Windows 11 client VM**, open **Computer Management**:
+1. On the **Windows 11 client VM**, login as **khoaadmin** account, open **Computer Management**:
    - Press `Windows + R`, type `compmgmt.msc`, and press Enter.
 2. Navigate to:
    - `System Tools > Local Users and Groups > Groups`
