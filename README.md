@@ -21,6 +21,21 @@ This repository includes:
 
 ---
 
+## 🧰 Technologies Used
+
+This project utilizes the following technologies:
+
+- **Microsoft Azure** – For hosting virtual machines and managing cloud infrastructure.
+- **Windows Server 2022** – Used as the domain controller and Active Directory host.
+- **Active Directory Domain Services (AD DS)** – For managing users, groups, and domain authentication.
+- **Windows 11 Pro** – Client VM used to test domain joining and user login.
+- **Remote Desktop Protocol (RDP)** – For remote access to both the domain controller and client VM.
+- **Microsoft Remote Desktop (macOS)** – Used to connect to Azure VMs from a Mac environment.
+- **DNS Configuration** – Custom DNS settings to enable domain discovery and authentication.
+- **Group Policy Management** – For applying security and configuration policies to users and computers.
+
+---
+
 ## 🛠️ Azure VM Configuration
 
 | Setting                     | Value                                      |
